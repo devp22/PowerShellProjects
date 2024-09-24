@@ -1,33 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<breakfast_menu>
-  <food>
-    <name>Belgian Waffles</name>
-    <price>$5.95</price>
-    <description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
-    <calories>650</calories>
-  </food>
-  <food>
-    <name>Strawberry Belgian Waffles</name>
-    <price>$7.95</price>
-    <description>Light Belgian waffles covered with strawberries and whipped cream</description>
-    <calories>900</calories>
-  </food>
-  <food>
-    <name>Berry-Berry Belgian Waffles</name>
-    <price>$8.95</price>
-    <description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</description>
-    <calories>900</calories>
-  </food>
-  <food>
-    <name>French Toast</name>
-    <price>$4.50</price>
-    <description>Thick slices made from our homemade sourdough bread</description>
-    <calories>600</calories>
-  </food>
-  <food>
-    <name>Homestyle Breakfast</name>
-    <price>$6.95</price>
-    <description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
-    <calories>950</calories>
-  </food>
-</breakfast_menu>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:p="http://world.episerver.com/feeds/EpiserverRSS20.xsd">
+  <channel>
+    <title>Rss 2.0 Sample customer product catalog feed</title>
+    <link>http://www.yourdomain.com</link>
+    <description>The latest product catalog feed of sample customer.</description>
+    <item>
+      <title>Sample Coat 001</title>
+      <link>http://yourdomain.com/c001.aspx</link>
+      <guid>c001</guid>
+      <p:imageLink>htto://yourdomain.com/image/c001.jpg</p:imageLink>
+      <pubDate>Sun, 20 Apr 2008 00:00:00 GMT</pubDate>
+      <description>High quality wool coat.</description>
+      <category><![CDATA[Coats>Winter Wear]]></category>
+      <category><![CDATA[Coats>Cashmere]]></category>
+      <p:brand>SampleManufactor1</p:brand>
+      <p:inStock>Y</p:inStock>
+      <p:stock>20</p:stock>
+      <p:recommend>Y</p:recommend>
+      <p:tags>short sleeve,blue,menâ€™s,outdoor</p:tags>
+      <p:recommended>h001,h003</p:recommended>
+      <p:attribute name="Colour">Black,Grey</p:attribute>
+      <p:attribute name="Size">10, 12, 14</p:attribute>
+      <p:price>
+        <p:unitPrice>10</p:unitPrice>
+        <p:salePrice>8.50</p:salePrice>
+        <p:currency>GBP</p:currency>
+      </p:price>
+    </item>
+    <item>
+      <title>Sample Hat 002</title>
+      <link>http://yourdomain.com/h002.aspx</link>
+      <guid>h002</guid>
+      <p:imageLink>http://yourdomain.com/image/h002.jpg</p:imageLink>
+      <pubDate>Wed, 30 Apr 2008 00:00:00 GMT</pubDate>
+      <description>Low quality wool hat.</description>
+      <category><![CDATA[Hats>Wool Hat]]></category>
+      <p:brand>SampleManufactor2</p:brand>
+      <p:inStock>Y</p:inStock>
+      <p:stock>20</p:stock>
+      <p:recommend>Y</p:recommend>
+      <p:tags>short sleeve,blue,menâ€™s,outdoor</p:tags>
+      <p:recommended>h001,h003</p:recommended>
+      <p:attribute name="Colour">Black </p:attribute>
+      <p:attribute name="Size">16,18,20</p:attribute>
+      <p:price>
+        <p:unitPrice>5</p:unitPrice>
+        <p:currency>GBP</p:currency>
+      </p:price>
+    </item>
+  </channel>
+</rss>

@@ -1,13 +1,30 @@
-#10.1. Access Information in an XML File
+<#
 
-#Download an XML File
+# Define the file path
+$fileName = '.\sample.xml'
 
-Invoke-WebRequest https://www.w3schools.com/xml/simple.xml -OutFile sample.xml
+# Read the XML file content
+$fileContent = [xml](Get-Content $fileName)
 
-#Get-Content of this file
+Write-Output 'File read'
+# Get user input for modification
+$itemIndex = [int](Read-Host 'Enter the item number you want to modify: ')
+$attribute = [string](Read-Host 'Enter the attribute you want to modify: ')
+$newValue = [string](Read-Host 'Enter the new value: ')
 
-$fileContent = [xml] (Get-Content .\sample.xml)
+# Access the item to modify
+$item = $fileContent.rss.channel.item[$itemIndex]
 
-Write-Output $fileContent
+# Set the new value
+$item.$attribute = $newValue
 
-Write-Output $fileContent[0]
+# Save changes to the XML file
+$fileContent.Save($fileName)
+
+Write-Output "File saved"
+
+#------------store output in a csv file---------------
+
+
+Get-Process | Export-Csv C:\temp\t.csv
+#>
