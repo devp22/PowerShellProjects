@@ -1,0 +1,1 @@
+Write-Output 'this is script 2'
